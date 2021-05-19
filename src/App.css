@@ -1,38 +1,69 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+html,
+body {
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  min-width: 100vw;
+  font-size: 10px;
+  overflow: hidden;
+  @media screen and (max-width: 1366px) {
+    font-size: 8px;
+  }
 }
 
-.App-link {
-  color: #61dafb;
+@font-face {
+  font-family: Montserrat-Black;
+  src: url(./Components/fonts/Montserrat-Black.ttf);
+}
+@font-face {
+  font-family: Montserrat-BlackItalick;
+  src: url(./Components/fonts/Montserrat-BlackItalic.ttf);
+}
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url(./Components/fonts/Montserrat-Bold.ttf);
+}
+@font-face {
+  font-family: Montserrat-BoldItalic;
+  src: url(./Components/fonts/Montserrat-BoldItalic.ttf);
+}
+@font-face {
+  font-family: Montserrat-Italic;
+  src: url(./Components/fonts/Montserrat-Italic.ttf);
+}
+@font-face {
+  font-family: Montserrat-Light;
+  src: url(./Components/fonts/Montserrat-Light.ttf);
+}
+@font-face {
+  font-family: Montserrat-LightItalic;
+  src: url(./Components/fonts/Montserrat-LightItalic.ttf);
+}
+@font-face {
+  font-family: Montserrat-Medium;
+  src: url(./Components/fonts/Montserrat-Medium.ttf);
+}
+@font-face {
+  font-family: Montserrat-MediumItalic;
+  src: url(./Components/fonts/Montserrat-MediumItalic.ttf);
+}
+@font-face {
+  font-family: Montserrat-Regular;
+  src: url(./Components/fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+  font-family: Montserrat-Thin;
+  src: url(./Components/fonts/Montserrat-Thin.ttf);
+}
+@font-face {
+  font-family: Montserrat-ThinItalic;
+  src: url(./Components/fonts/Montserrat-ThinItalic.ttf);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
 }
